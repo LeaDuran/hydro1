@@ -1,11 +1,12 @@
 #Function to calculate the performance of hydrological models
 #Klingon-Gupta Efficency (KGE-statistic) dimensionless
+#with bias, error and variability
 #NSE and variations of NSE (NSE of ln and sqrt)
 
 #INPUT: 
 #qobs= observed discharge in m3/s
 #qsim=simulated dichqrge in m3/s
-#interp = logical (T or F) if need to interpolate the time series
+#interp = logical if need to interpolate the time series abcd
 
 #OUPUT:
 #list
