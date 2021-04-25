@@ -6,7 +6,7 @@
 #INPUT: 
 #qobs= observed discharge in m3/s
 #qsim=simulated dichqrge in m3/s
-#interp = logical if need to interpolate the time series abcd
+#interp = logical if need to interpolate the time series
 
 #OUPUT:
 #list
@@ -97,10 +97,6 @@ hydroperf<-function(qobs,qsim,interp=F){
   
   
   #Volume errors--------------------------
-  
-  #RVE - Relative Volumes Errors
-  #The RVE coefficient can vary from ???100 to +inf, where 0 indicates a perfect fit
-  #!!!! to add
   
   #volume timing error (VE) see Criss et al 2008
   ve<-1-sum(abs(qsim-qobs))/sum(qobs)
